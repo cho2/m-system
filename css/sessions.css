@@ -1,0 +1,83 @@
+#sessions {
+	width: 100%;
+	height: auto;
+	margin-top: 0;
+	box-shadow: 0 1px 0 rgba(255,255,255,.05) inset;
+	background: rgba(44,44,44,0.8);
+	color: #bbb;
+	text-align:center;
+	border-bottom-left-radius:2px;
+	border-bottom-right-radius:2px;
+}
+li {
+	display:inline-block;
+    border-radius: 4px;
+    margin: 8px;
+    position: relative;
+    left: 0px;
+    text-align:center;
+    border-radius: 22px;
+}
+li img {
+	width: 26px;
+	height: 26px;
+	margin-left: -11px;
+	margin-right: -5px;
+	margin-top: -5px;
+	margin-bottom: 1px;
+	padding: 3px;
+	cursor:pointer;
+	background: ;
+	border-radius: 20px;
+	border: 2px solid #bbb;
+}
+li:hover img {
+	background: #FF3C00;
+	border: 2px solid #ccc;
+	box-shadow: 0px 0px 2px #000;
+}
+li h2 {
+	display:none;
+	font-size: 16px;
+	color: #eee;
+}
+li span {
+	display:none;
+	font-size:14px;
+	color: #eee;
+}
+li:hover span, li:hover h2 {
+	content:"";
+	display:block;
+	position:fixed;
+	margin-right: 10px;
+	font-family: 'Aurulent Sans';
+    letter-spacing: 0px;
+	text-align:right;
+	width:100%;
+	right:0px;
+}
+li:hover h2 {
+	margin-top: 70px;
+	font-size:1em;
+}
+li:hover span {
+	margin-top: 90px;
+	font-size:0.9em;
+}
+
+/***********************************
+ * Fonts Collections *
+ * *********************************/
+
+@font-face {
+    font-family: 'TrendexLightSSi.ttf';
+    src: url(../fonts/TrendexLightSSi.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Aurulent Sans';
+    src: url(../fonts/AurulentSans-Regular.otf);
+    font-weight: 600;
+}
