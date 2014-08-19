@@ -1,15 +1,15 @@
 #bevel {
-    background: #111;
-    border-left: 1px solid #000;
-    height: 100%;
-    width: 260px;
-    overflow-x: hidden;
-    overflow-y: auto;
-    right: -259px;
-    top: 0px;
-    position:absolute;
-    z-index: 4;
-    -webkit-transition: all 300ms ease-in-out;
+   	background: #111;
+	border-left: 1px solid #000;
+	height: 100%;
+	width: 260px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	right: -259px;
+	top: 0px;
+	position:absolute;
+	z-index: 4;
+	-webkit-transition: all 200ms ease-in-out;
 }
 #bevel:hover {
 	right: 0px;
@@ -18,12 +18,13 @@
 	position: relative;
 	top: 42px;
 	width:auto;
-	min-height:200px;
-	margin: 5px;
+	height:auto;
+	margin: 0 5px;
+	padding-bottom: 25px;
 }
 #sosmed a {
 	display:block;
-	margin: 2px;
+	margin: 1px;
 	padding: 8px;
 	background: #444;
 	color: #ddd;
@@ -41,21 +42,21 @@
 	float: left;
 }
 #system_settings {
-	padding: 5px;
-	margin: 0px;
+	margin-top: 35px;
 	color:#ccc;
 	font-size: 14px;
+	font-family: 'Aurulent Sans';
 	text-align:center;
 	text-shadow: 0 2px 2px #000;
 	cursor:default;
 }
-#system_settings, #system {
-	position: relative;
-	top: 25px;
+#system {
 	width:auto;
 	height: auto;
-	margin:5px;
+	margin-top:5px;
 	font-family: 'Aurulent Sans';
+	text-align:center;
+	overflow-y:auto;
 }
 #system img {
 	width:28px;
@@ -84,10 +85,10 @@
 #time {
 	width: 260px;
 	position: fixed;
-	background: #111;
+	background: #1a1a1a;
 	color: #bbb;
-	bottom: 40px;
-	padding: 5px 0 10px;
+	bottom: 0px;
+	padding: 5px 0 20px;
     cursor: default;
     text-align: center;
 }
@@ -106,13 +107,26 @@
 /***********************************
  * Fonts Collections *
  * *********************************/
-
+@font-face {
+    font-family: 'Arimo Bold';
+    src: url(../fonts/Arimo-Bold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Arimo Regular';
+    src: url(../fonts/Arimo-Regular.ttf);
+    font-weight: 600;
+}
 @font-face {
     font-family: 'TrendexLightSSi.ttf';
     src: url(../fonts/TrendexLightSSi.ttf);
     font-weight: 600;
 }
-
+@font-face {
+    font-family: 'OpenSans Light';
+    src: url(../fonts/OpenSans-Light.ttf);
+    font-weight: 600;
+}
 @font-face {
     font-family: 'Aurulent Sans';
     src: url(../fonts/AurulentSans-Regular.otf);
