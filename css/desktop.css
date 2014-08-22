@@ -58,44 +58,41 @@ body {
 }
 
 #launcher {
-	background-color: rgba(0,0,0,0);
-    height: 100px;
+	background:rgba(0,0,0,0);
+    height: 35px;
     max-width: 98%;
     overflow-x: hidden;
     overflow-y: hidden;
     z-index: 20;
     -webkit-transition: all 200ms ease-in-out;
     -webkit-box-align: center;
-	margin-bottom: 0px;
-	padding-right: 44px;
+	margin-bottom: 65px;
+	padding-right: 62px;
 }
+
 #launcher:before, #launcher:after {
 	content: " ";
-	position:absolute;
-	margin-top: 34px;
+	position:fixed;
+	margin-top: 35px;
 	width: 4px;
 }
 #launcher:before {
-	background-repeat: repeat-x right bottom;
 	border-top-left-radius: 5px;
 	height: 64px;
-	margin-left:16px;
-	border-top-left-radius: 1px solid #444;
+	margin-left:26px;
 	border-left:1px solid #444;
 }
 #launcher:after {
-	background-repeat: repeat-x left bottom;
 	border-top-right-radius: 5px;
 	height: 64px;
-	margin-left:21px;
-	border-top-right-radius: 1px solid #444;
+	margin-left:31px;
 	border-right:1px solid #444;
 }
 
 #launcher:before,
 #launcher:after,
 .ui-launcher-entry-img-holder {
-    background: rgba(213,213,248,0.6);
+    background-color: rgba(213,213,248,0.7);
 	border-top:1px solid #444;
 }
 
@@ -115,41 +112,38 @@ body {
 .ui-launcher-entry {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-box-pack: center;
     -webkit-box-align: center;
     text-align: center;
-    width: 100px;
+    width: 120px;
 }
 
 .ui-launcher-entry span {
     white-space: nowrap;
-    display: block;
     text-align: center;
-    vertical-align:bottom;
     overflow:hidden;
     text-overflow: ellipsis;
-    position: relative;
     color:transparent;
     font-size: 10px;
    	height: 16px;
-    max-width: 85px;
-    padding: 4px 7px;
+    max-width: 110px;
+    padding: 4px 7px 4px 7px;
     margin: 0px;
     vertical-align: middle;
-   	-webkit-transition: hover 100ms ease-out;
 	-webkit-border-radius: 10px;
-	top: -98px;
-	z-index: -1;
+	z-index: -5;
 }
 
 .ui-launcher-entry:hover span {
+	content: " ";
+	position:relative;
+	top: 2px;
+	display: block;
 	background: #000;
 	font-size: 11px;
-	top: -98;
 	text-align: center;
 	color: #eee;
-	font-weight: 600;
 	text-shadow: 0 2px 2px #000;
+	z-index: 100;
 }
 .ui-launcher-entry:hover:before {	
 	content: " ";
@@ -159,19 +153,22 @@ body {
 	border-style:solid;
 	border-color: #000 transparent transparent transparent;
 	bottom: 63px;
-	margin-left: 44px;
+	margin-left: 54px;
 	position: fixed;
-	z-index: -3;
+	z-index: 99;
 }
 
 .ui-launcher-entry-img-holder {
+	content:"";
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-box-pack: center;
     -webkit-box-align: center;
     height: 64px;
-    margin-top: 34px;
+    margin-top: 35px;
     z-index: 12;
+    position:fixed;
+    margin-left: 31px;
 }
 
 .ui-launcher-entry img {
