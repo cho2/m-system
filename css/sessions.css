@@ -11,12 +11,12 @@
 }
 li {
 	display:inline-block;
-	border-radius: 4px;
-	margin: 8px;
-	position: relative;
-	left: 0px;
-	text-align:center;
-	border-radius: 50px;
+    border-radius: 4px;
+    margin: 8px;
+    position: relative;
+    left: 0px;
+    text-align:center;
+    border-radius: 50px;
 }
 li img {
 	width: 26px;

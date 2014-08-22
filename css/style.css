@@ -67,7 +67,6 @@ html {
 }
 
 .ui-listview-item {
-    text-shadow: 0 1px 0px #000;
     display: block;
     min-height: 28px;
     border-radius: inherit;
@@ -88,6 +87,7 @@ html {
 	color: #ccc;
     letter-spacing: 0px;
     border-bottom: 1px solid #111;
+    text-shadow: 0 1px 1px #000;
 }
 
 .ui-listview-header {
@@ -102,9 +102,7 @@ html {
 .ui-listview-item:hover,
 .ui-collapsible-header:hover {
     color: #fff;
-    text-shadow: 0 1px 1px #000;
     background-image: -webkit-linear-gradient(#1E90FF, #1873CC);
-	/*background-color: #777;*/
 }
 
 .ui-listview-first-child,
@@ -134,18 +132,17 @@ span {
     min-height: 28px;
     padding: 7px 6px 1px 12px;
     display: block;
-    text-shadow: 0 1px 0px #000;
     cursor: pointer;
 }
 
 .ui-collapsible-control-group {
     overflow: hidden;
-    margin: 5px 2px;
+    margin: 5px 3px;
     -webkit-transition: all 0.2s ease-in-out;
 }
 
 .ui-back-button {
-    background: url("../img/go-back.png") no-repeat center;
+    background: url("../img/list.png") no-repeat center;
     width: 24px;
     height: 24px;
     top: 3px;
@@ -271,14 +268,16 @@ span {
 }
 
 .ui-expandable-icon {
-    background: url("../img/go-next.png") no-repeat center;
-    width: 24px;
-    height: 24px;
+    background: url("../img/arrow.png") no-repeat center;
+    width: 30px;
+    height: 38px;
+    border-left: 1px solid rgba(0,0,0,0.3);
     float: right;
+    margin: -8px -6px -4px 0;
 }
 
 .ui-expandable-icon-expanded {
-    background: url("../img/go-down.png") no-repeat center;
+    background: url("../img/arrow-down.png") no-repeat center;
 }
 
 /***********************************

@@ -6,7 +6,7 @@ var DesktopData = DesktopData || (function () {
         return ([
             {   desktop: "",
                 icon: "icon",
-                name: "Launcher Entry"
+                name: "LibreOffice Writer"
             }
         ]);
 
