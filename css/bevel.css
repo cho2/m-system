@@ -82,7 +82,7 @@
 #time {
 	width: 260px;
 	height: auto;
-	position: fixed;
+	position: absolute;
 	background: #1a1a1a;
 	color: #bbb;
 	bottom: 0px;
